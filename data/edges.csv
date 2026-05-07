@@ -1,0 +1,34 @@
+﻿id,label,source,target,type,certainty,directed,year_start,year_end,source_doc,description
+e001,1904 banana exports,limon_port,ufco_boston_hq,trade,documented,TRUE,1899,1950,UFCo Annual Report 1904,Banana export revenue remittance Limón to Boston
+e002,,minor_keith,ufco_institution,trade,documented,TRUE,1899,1929,May & Plaza 1958,Keith as co-founder and board member of UFCo
+e003,,minor_keith,banana_concession_1884,political,documented,TRUE,1884,1884,La Gaceta 1884,Keith negotiates concession directly with government
+e004,,cr_government,banana_concession_1884,political,documented,TRUE,1884,1884,La Gaceta 1884,State grants concession to Keith
+e005,1904 Zent banana output,zent_plantation,limon_port,trade,documented,TRUE,1899,1930,UFCo Annual Report 1904,Banana shipments from Zent to port
+e006,,limon_strike_1910,ufco_institution,political,documented,TRUE,1910,1910,Chomsky 1996,Strike forces corporate response from UFCo
+e007,,carlos_fallas,limon_strike_1910,correspondence,documented,TRUE,1910,1941,Fallas 1941,Fallas documents strike conditions in Mamita Yunai
+e010,,panama_disease_1920,zent_plantation,causal,documented,TRUE,1920,1930,May & Plaza 1958,Panama disease leads to plantation abandonment
+e011,,panama_disease_1920,limon_strike_1910,causal,interpretive,TRUE,1920,1935,Chomsky 1996,Disease-driven labor restructuring intensifies worker grievances
+e012,,la_nacion,limon_strike_1910,news,probable,TRUE,1910,1910,La Gaceta 1910,Press coverage of strike events
+e013,,sigatoka_1935,zent_plantation,causal,documented,TRUE,1935,1938,UFCo Annual Report 1936,Sigatoka forces zone abandonment
+e014,,sigatoka_1935,worker_camp_zent,causal,probable,TRUE,1935,1938,,Abandonment displaces camp population
+e016,,ufco_institution,zent_plantation,trade,documented,TRUE,1899,1930,UFCo Annual Report 1904,UFCo ownership and operation of Zent plantation
+e017,,ufco_institution,atlantic_railroad,trade,documented,TRUE,1899,1972,Kepner & Soothill 1935,UFCo ownership and operation of Atlantic Railroad
+e018,,minor_keith,atlantic_railroad,political,documented,TRUE,1871,1899,Kepner & Soothill 1935,Keith builds and controls railroad under government concession
+e019,,banana_concession_1884,atlantic_railroad,political,documented,TRUE,1884,1884,La Gaceta 1884,Concession grants Keith land in exchange for railroad completion
+e020,,cr_government,limon_port,political,documented,FALSE,1870,1950,Sibaja 1976,Costa Rican state jurisdiction over port despite UFCo influence
+e021,,limon_port,san_jose,,documented,FALSE,1900,1990,,
+e022,,limon_port,siquirres,,documented,FALSE,1900,1990,,
+e025,Limón–Boston White Fleet,limon_port,ufco_boston_hq,shipping,documented,TRUE,1899,1950,UFCo Annual Reports,White Fleet banana shipping route
+e026,Limón–Bocas del Toro coastal route,limon_port,bocas_del_toro,shipping,documented,TRUE,1899,1940,UFCo Annual Report 1905,Coastal shipping coordination
+e027,,limon_port,ufco_boston_hq,news,documented,TRUE,1899,1940,,
+,,,,,,,,,,
+,,,,,,,,,,
+,Deportation to Limón,poder_judicial,calufa,political,documented,TRUE,,,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 86.",Carlos Luis Fallas is deported to Limón by the judicial authorities for organizing a worker strike movement in Alajuela.
+,,,,,,,,,,
+,,finca,limon,disease?,documented,,,,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 87.",Sick workers are sent to Limón's Hospital.
+,,repeat for each finca,,,documented,,,,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 87.",
+,,fincas in guapiles,siquirres,disease?,documented,,,,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 87.","Sick workers are sent to the dispensary in Siquirres, where they were given quinine."
+,,,,,,,,,,
+,Manuel Mora relies on his congressional immunity to avoid arrest and invoke habeas corpus in the Siquirres court to release workers arrested during the Great Banana Strike of 1934.,manuel_mora,siquirres,legal,,TRUE,1934,1934,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 88.",
+,"To stop the Great Strike of 1934, the Costa Rican government relies on the police to arrest striking workers as they transit public roads.",fuerza_publica,1934_banana_strike_1,coercion,,TRUE,1934,1934,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 88.",
+,"Police forces are sent to cut and collect bananas to replace the workers and contain the strike. Workers respond by destroying 10 hectares of bananas at night, preventing any good bananas from reaching Limón.",fuerza_publica,1934_banana_strike_1,coercion,,FALSE,1934,1934,"Cerdas Mora, Jaime. ""La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales."" Revista ABRA 3, no. 2 (1984): 88–89.",

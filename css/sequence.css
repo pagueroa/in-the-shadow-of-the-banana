@@ -1,0 +1,190 @@
+/* ============================================================
+   SEQUENCE
+   Sequence player bar, side panel cards, and flash animation
+   ============================================================ */
+
+/* --- Player bar --- */
+#sequence-player {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  border-top: 1px solid #3a3328;
+  padding: 10px 24px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#seq-play {
+  display: none;
+}
+
+/* --- Parent event title --- */
+#sequence-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e8a245;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* --- Controls row --- */
+#sequence-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#sequence-controls button {
+  background: none;
+  border: none;
+  color: #8a7a5a;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-family: 'Georgia', serif;
+  border-radius: 2px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+#sequence-controls button:hover {
+  color: #e8a245;
+}
+
+#sequence-step-counter {
+  font-size: 11px;
+  color: #5a4a2a;
+  letter-spacing: 1px;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+#sequence-exit {
+  border: 1px solid #3a3328 !important;
+  border-radius: 2px;
+  margin-left: 8px;
+  color: #8a7a5a !important;
+}
+
+#sequence-exit:hover {
+  color: #e8a245 !important;
+  border-color: #e8a245 !important;
+}
+
+/* --- Sequence panel header --- */
+#seq-panel-header {
+  margin-top: 40px;
+  position: sticky;
+  top: 40px;
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #3a3328;
+  padding: 12px 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#seq-panel-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e8a245;
+  flex: 1;
+  padding-right: 12px;
+}
+
+#seq-panel-step {
+  font-size: 11px;
+  color: #5a4a2a;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* --- Sequence panel cards --- */
+.seq-card {
+  border-bottom: 1px solid #2a2a2a;
+  transition: background 0.2s;
+}
+
+.seq-card:last-child {
+  border-bottom: none;
+}
+
+.seq-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 20px 10px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.seq-card-header:hover {
+  background-color: #222;
+}
+
+.seq-card-meta {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8a7a5a;
+}
+
+.seq-card-label {
+  font-size: 16px;
+  color: #e8d5a3;
+  line-height: 1.3;
+  padding-right: 20px;
+}
+
+.seq-card-body {
+  padding: 0 20px 16px 20px;
+}
+
+.seq-card-dates {
+  font-size: 11px;
+  color: #8a7a5a;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.seq-card-description {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #c4b599;
+}
+
+/* --- Flash animation on step change --- */
+@keyframes seq-flash {
+  0%   { background-color: rgba(232, 162, 69, 0.18); }
+  100% { background-color: transparent; }
+}
+
+.seq-card-flash .seq-card-header {
+  animation: seq-flash 0.4s ease-out forwards;
+}
+
+.seq-card-symbol {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.seq-card-header {
+  /* add to existing rule */
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}

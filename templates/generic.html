@@ -1,0 +1,119 @@
+<!-- ============================================================
+     GENERIC PANEL TEMPLATE
+     Variables: id, node, meta, body_en, body_es, tags_en, tags_es,
+                connections, citations, tr
+     ============================================================ -->
+
+<div class="full-panel" id="panel-{{ id }}">
+
+  <!-- HEADER -->
+  <div class="full-panel-header">
+
+    <div class="full-panel-type">
+      <span class="lang-block en">
+        {{ tr.en.types.get(node.node_type, node.node_type) }}
+        {% if node.node_subtype %} / {{ tr.en.subtypes.get(node.node_subtype, node.node_subtype) }}{% endif %}
+      </span>
+      <span class="lang-block es">
+        {{ tr.es.types.get(node.node_type, node.node_type) }}
+        {% if node.node_subtype %} / {{ tr.es.subtypes.get(node.node_subtype, node.node_subtype) }}{% endif %}
+      </span>
+    </div>
+
+    <h1 class="full-panel-label">
+      <span class="lang-block en">{{ node.label_en }}</span>
+      <span class="lang-block es">{{ node.label_es }}</span>
+    </h1>
+
+    {% if node.year_start %}
+    <p class="full-panel-dates">
+      {{ node.year_start }}{% if node.year_end %} – {{ node.year_end }}{% endif %}
+    </p>
+    {% endif %}
+
+    {% if node.country %}
+    <p class="full-panel-country">{{ node.country }}</p>
+    {% endif %}
+
+  </div>
+
+  <!-- TAGS -->
+  {% if tags_en or tags_es %}
+  <div class="full-panel-tags">
+    <div class="lang-block en">
+      {% for tag in tags_en %}
+      <span class="panel-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <div class="lang-block es">
+      {% for tag in tags_es %}
+      <span class="panel-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- BODY -->
+  {% if body_en or body_es %}
+  <div class="full-panel-body">
+    <div class="lang-block en">{{ body_en }}</div>
+    <div class="lang-block es">{{ body_es }}</div>
+  </div>
+  {% endif %}
+
+  <!-- CONNECTIONS -->
+  {% if connections %}
+  <div class="full-panel-section">
+
+    <h2 class="full-panel-section-title">
+      <span class="lang-block en">{{ tr.en.connections }}</span>
+      <span class="lang-block es">{{ tr.es.connections }}</span>
+    </h2>
+
+    <ul class="full-panel-connections">
+      {% for conn in connections %}
+      <li class="full-panel-connection-item">
+
+        <a href="{{ conn.id }}.html" class="full-panel-connection-link">
+          <span class="lang-block en">{{ conn.label_en }}</span>
+          <span class="lang-block es">{{ conn.label_es }}</span>
+        </a>
+
+        <span class="full-panel-connection-meta">
+          {% if conn.relation_subtype %}
+            <span class="lang-block en">{{ tr.en.subtypes.get(conn.relation_subtype, conn.relation_subtype) }}</span>
+            <span class="lang-block es">{{ tr.es.subtypes.get(conn.relation_subtype, conn.relation_subtype) }}</span>
+          {% elif conn.relation_type %}
+            <span class="lang-block en">{{ tr.en.types.get(conn.relation_type, conn.relation_type) }}</span>
+            <span class="lang-block es">{{ tr.es.types.get(conn.relation_type, conn.relation_type) }}</span>
+          {% endif %}
+          {% if conn.year_start %} · {{ conn.year_start }}{% endif %}
+          {% if conn.directed %} →{% endif %}
+        </span>
+
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  {% endif %}
+
+  <!-- CITATIONS -->
+  {% if citations %}
+  <div class="full-panel-section">
+
+    <h2 class="full-panel-section-title">
+      <span class="lang-block en">{{ tr.en.sources }}</span>
+      <span class="lang-block es">{{ tr.es.sources }}</span>
+    </h2>
+
+    <ul class="full-panel-citations">
+      {% for cite in citations %}
+      <li class="full-panel-citation">{{ cite.citation }}</li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  {% endif %}
+
+</div>

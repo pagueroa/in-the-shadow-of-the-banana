@@ -1,0 +1,105 @@
+<!-- ============================================================
+     DOCUMENT HEAD
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In the Shadow of the Banana | En la sombra del banano</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/map.css"/>
+  <link rel="stylesheet" href="css/ui.css"/>
+  <link rel="stylesheet" href="css/sequence.css"/>
+</head>
+
+<!-- ============================================================
+     DOCUMENT BODY
+     ============================================================ -->
+<body>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- LANGUAGE TOGGLE -->
+<div id="lang-toggle">
+  <button id="lang-btn-en" class="lang-active">EN</button>
+  <span>|</span>
+  <button id="lang-btn-es">ES</button>
+</div>
+
+<!-- SIDE PANEL -->
+<div id="side-panel"></div>
+
+<!-- TEMPORAL BAR -->
+<div id="temporal-bar">
+  <span data-i18n="year"></span>
+  <input type="range" id="temporal-slider" min="" max="" value=""/>
+  <span id="year-display"></span>
+</div>
+
+<!-- SEQUENCE PLAYER -->
+<div id="sequence-player" style="display:none;">
+  <div id="sequence-title"></div>
+  <div id="sequence-controls">
+    <button id="seq-restart">◀◀ <span data-i18n="restart"></span></button>
+    <button id="seq-prev">◀ <span data-i18n="prev"></span></button>
+    <button id="seq-play">▶ <span data-i18n="play"></span></button>
+    <button id="seq-next"><span data-i18n="next"></span> ▶</button>
+    <span id="sequence-step-counter"></span>
+    <button id="sequence-exit"><span data-i18n="exit_sequence"></span> ✕</button>
+  </div>
+</div>
+
+<!-- SEARCH AND FILTER PANEL -->
+<div id="filter-panel">
+
+  <div id="filter-header">
+    <span data-i18n="search_filter"></span>
+    <span id="filter-toggle-icon">▶</span>
+  </div>
+  
+  <div id="legend-header">
+    <span data-i18n="legend"></span>
+  </div>
+
+  <div id="filter-legend"></div>
+
+  <div id="filter-body" class="collapsed">
+    <input type="text" id="search-input" data-i18n-placeholder="search_placeholder"/>
+    <ul id="search-results"></ul>
+    <div class="filter-section-label" data-i18n="filter_by_entry"></div>
+    <div id="node-type-filters"></div>
+    <div class="filter-section-label" data-i18n="filter_by_relation"></div>
+    <div id="edge-type-filters"></div>
+  </div>
+
+</div>
+
+<!-- ============================================================
+     SCRIPTS
+     Order matters — dependencies must load before dependents
+     ============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-polylinedecorator/1.1.0/leaflet.polylineDecorator.min.js"></script>
+<script src="js/globals.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/config.js"></script>
+<script src="js/styles.js"></script>
+<script src="js/map.js"></script>
+<script src="js/markers.js"></script>
+<script src="js/relations.js"></script>
+<script src="js/animatedline.js"></script>
+<script src="js/bezier.js"></script>
+<script src="js/panel.js"></script>
+<script src="js/temporal.js"></script>
+<script src="js/search.js"></script>
+<script src="js/centroid.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/sequence.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/data.js"></script>
+
+</body>
+</html>

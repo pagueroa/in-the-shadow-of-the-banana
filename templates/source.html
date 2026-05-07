@@ -1,0 +1,194 @@
+<!-- ============================================================
+     SOURCE PANEL TEMPLATE
+     Used for: source (all subtypes)
+     Extends generic structure with: bibliographic metadata,
+     link to original document, transcription/notes
+     Variables: id, node, meta, body_en, body_es, tags_en, tags_es,
+                connections, citations, tr
+     ============================================================ -->
+
+<div class="full-panel" id="panel-{{ id }}">
+
+  <!-- HEADER -->
+  <div class="full-panel-header">
+
+    <div class="full-panel-type">
+      <span class="lang-block en">
+        {{ tr.en.types.get(node.node_type, node.node_type) }}
+        {% if node.node_subtype %} / {{ tr.en.subtypes.get(node.node_subtype, node.node_subtype) }}{% endif %}
+      </span>
+      <span class="lang-block es">
+        {{ tr.es.types.get(node.node_type, node.node_type) }}
+        {% if node.node_subtype %} / {{ tr.es.subtypes.get(node.node_subtype, node.node_subtype) }}{% endif %}
+      </span>
+    </div>
+
+    <h1 class="full-panel-label">
+      {% if meta.title %}{{ meta.title }}{% else %}
+      <span class="lang-block en">{{ node.label_en }}</span>
+      <span class="lang-block es">{{ node.label_es }}</span>
+      {% endif %}
+    </h1>
+
+  </div>
+
+  <!-- BIBLIOGRAPHIC METADATA -->
+  <div class="full-panel-section source-meta">
+
+    {% if meta.author %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Author</span>
+      <span class="source-meta-label lang-block es">Autor</span>
+      <span class="source-meta-value">{{ meta.author }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.title %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Title</span>
+      <span class="source-meta-label lang-block es">Título</span>
+      <span class="source-meta-value"><em>{{ meta.title }}</em></span>
+    </div>
+    {% endif %}
+
+    {% if meta.journal %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Journal</span>
+      <span class="source-meta-label lang-block es">Revista</span>
+      <span class="source-meta-value">
+        {{ meta.journal }}
+        {% if meta.volume %}, vol. {{ meta.volume }}{% endif %}
+        {% if meta.issue %}, no. {{ meta.issue }}{% endif %}
+        {% if meta.pages %}, pp. {{ meta.pages }}{% endif %}
+      </span>
+    </div>
+    {% endif %}
+
+    {% if meta.publisher %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Publisher</span>
+      <span class="source-meta-label lang-block es">Editorial</span>
+      <span class="source-meta-value">{{ meta.publisher }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.year %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Year</span>
+      <span class="source-meta-label lang-block es">Año</span>
+      <span class="source-meta-value">{{ meta.year }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.language %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Language</span>
+      <span class="source-meta-label lang-block es">Idioma</span>
+      <span class="source-meta-value">{{ meta.language }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.medium %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Medium</span>
+      <span class="source-meta-label lang-block es">Medio</span>
+      <span class="source-meta-value">{{ meta.medium }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.original_context %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Original context</span>
+      <span class="source-meta-label lang-block es">Contexto original</span>
+      <span class="source-meta-value">{{ meta.original_context }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.transcribed_by %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Transcribed by</span>
+      <span class="source-meta-label lang-block es">Transcrito por</span>
+      <span class="source-meta-value">{{ meta.transcribed_by }}</span>
+    </div>
+    {% endif %}
+
+    {% if meta.url %}
+    <div class="source-meta-row">
+      <span class="source-meta-label lang-block en">Link</span>
+      <span class="source-meta-label lang-block es">Enlace</span>
+      <span class="source-meta-value">
+        <a href="{{ meta.url }}" target="_blank" class="source-external-link">{{ meta.url }}</a>
+      </span>
+    </div>
+    {% endif %}
+
+  </div>
+
+  <!-- CHICAGO CITATION -->
+  {% if node.citation %}
+  <div class="full-panel-section">
+    <h2 class="full-panel-section-title">
+      <span class="lang-block en">Citation</span>
+      <span class="lang-block es">Cita bibliográfica</span>
+    </h2>
+    <p class="source-citation">{{ node.citation }}</p>
+  </div>
+  {% endif %}
+
+  <!-- TAGS -->
+  {% if tags_en or tags_es %}
+  <div class="full-panel-tags">
+    <div class="lang-block en">
+      {% for tag in tags_en %}
+      <span class="panel-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <div class="lang-block es">
+      {% for tag in tags_es %}
+      <span class="panel-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- BODY — reliability notes, archival info, narrative context -->
+  {% if body_en or body_es %}
+  <div class="full-panel-body">
+    <div class="lang-block en">{{ body_en }}</div>
+    <div class="lang-block es">{{ body_es }}</div>
+  </div>
+  {% endif %}
+
+  <!-- CITED BY -->
+  {% if cited_by %}
+  <div class="full-panel-section">
+
+    <h2 class="full-panel-section-title">
+      <span class="lang-block en">Cited in</span>
+      <span class="lang-block es">Citado en</span>
+    </h2>
+
+    <ul class="full-panel-connections">
+      {% for entry in cited_by %}
+      <li class="full-panel-connection-item">
+        <a href="{{ entry.id }}.html" class="full-panel-connection-link">
+          <span class="lang-block en">{{ entry.label_en }}</span>
+          <span class="lang-block es">{{ entry.label_es }}</span>
+        </a>
+        <span class="full-panel-connection-meta">
+          {% if entry.node_subtype %}
+            <span class="lang-block en">{{ tr.en.subtypes.get(entry.node_subtype, entry.node_subtype) }}</span>
+            <span class="lang-block es">{{ tr.es.subtypes.get(entry.node_subtype, entry.node_subtype) }}</span>
+          {% elif entry.node_type %}
+            <span class="lang-block en">{{ tr.en.types.get(entry.node_type, entry.node_type) }}</span>
+            <span class="lang-block es">{{ tr.es.types.get(entry.node_type, entry.node_type) }}</span>
+          {% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  {% endif %}
+
+</div>
