@@ -510,8 +510,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.54,
-          10.1
+          -83.3554907,
+          10.0877643
         ]
       },
       "properties": {
@@ -532,7 +532,7 @@
         "target_other": null,
         "directed_other": false,
         "description_en": "Striking workers' headquarters during the Banana Strike of 1934.",
-        "description_es": "Cuartel general de los huelguistas durante la Huelga Bananera de 1934.",
+        "description_es": "Cuartel general de los huelguistas durante la huelga bananera de 1934.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
@@ -543,13 +543,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.545,
-          10.105
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "finca_los_angeles",
         "label_en": "Finca Los Angeles",
@@ -582,8 +576,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.62,
-          10.12
+          -83.39905,
+          10.09411
         ]
       },
       "properties": {
@@ -618,8 +612,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.7919,
-          10.2177
+          -83.79136,
+          10.21544
         ]
       },
       "properties": {
@@ -654,8 +648,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.58,
-          10.15
+          -83.40655,
+          10.28565
         ]
       },
       "properties": {
@@ -690,8 +684,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.56,
-          10.09
+          -83.79019,
+          10.51067
         ]
       },
       "properties": {
@@ -726,8 +720,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.55,
-          10.08
+          -83.37737,
+          10.17947
         ]
       },
       "properties": {
@@ -762,8 +756,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.535,
-          10.095
+          -83.34175,
+          10.08604
         ]
       },
       "properties": {
@@ -798,8 +792,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.53,
-          10.085
+          -83.32227,
+          10.08187
         ]
       },
       "properties": {
@@ -834,8 +828,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.9,
-          9.55
+          -82.61357,
+          9.50167
         ]
       },
       "properties": {
@@ -870,8 +864,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.54,
-          10.1
+          -83.3554907,
+          10.0877643
         ]
       },
       "properties": {
@@ -894,42 +888,6 @@
         "description_en": null,
         "description_es": null,
         "panel_html": true,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": "Costa Rica"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.6819,
-          9.9003
-        ]
-      },
-      "properties": {
-        "id": "solidarity_strike",
-        "label_en": "Solidarity Strike",
-        "label_es": "Huelga de Solidaridad",
-        "node_type": "event",
-        "node_subtype": "strike",
-        "mapped": true,
-        "parent_event": "1934_banana_strike",
-        "sequence_value": 4,
-        "year_start": null,
-        "year_end": null,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
         "image_path": null,
         "source": null,
         "citation": null,
@@ -1464,8 +1422,8 @@
       },
       "properties": {
         "id": "cerdas_1984",
-        "label_en": "Cerdas 1984",
-        "label_es": "Cerdas 1984",
+        "label_en": "Cerdas Mora, Jaime. \"La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales.\" Revista ABRA 3, no. 2 (1984)",
+        "label_es": "Cerdas Mora, Jaime. \"La huelga bananera de 1934. Anécdotas y enseñanzas de uno de sus dirigentes principales.\" Revista ABRA 3, no. 2 (1984)",
         "node_type": "source",
         "node_subtype": "worker_testimony",
         "mapped": true,
@@ -1491,92 +1449,26 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.0338,
-          9.9902
-        ]
-      },
-      "properties": {
-        "id": "ufco_papers_429",
-        "label_en": "Letter from P. Góngora to Mr. Sheehy (Nov. 22, 1939)",
-        "label_es": "Carta de P. Góngora a Mr. Sheehy (22 de Nov., 1939)",
-        "node_type": "source",
-        "node_subtype": "UFCo_comms",
-        "mapped": true,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1939,
-        "year_end": 1939,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": "Costa Rica"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "prowhite_committee",
-        "label_en": "Instructions to abstain from responding to the \"Pro-White Costarricans Committee\"",
-        "label_es": "Instrucciones de abstenerse de responder al \"Comité de Costarricenses Pro-Blancos\"",
-        "node_type": "information",
-        "node_subtype": "correspondence",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1939,
-        "year_end": 1939,
-        "source_location": "san_jose",
-        "target_location": "limon",
-        "directed_location": true,
-        "source_other": "p_gongora",
-        "target_other": "sheehy",
-        "directed_other": true,
-        "description_en": "22-Nov-39",
-        "description_es": "22 de Noviembre, 1939",
-        "panel_html": false,
-        "image_path": null,
-        "source": "ufco_papers_429",
-        "citation": null,
-        "page": null,
-        "country": "Costa Rica"
-      }
-    },
-    {
-      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "calufa_deportation",
-        "label_en": "Carlos Luis Fallas's Deportation",
-        "label_es": "Deportación de Carlos Luis Fallas",
+        "label_en": "Judicial Confinement of Carlos Luis Fallas to Limón",
+        "label_es": "Confinamiento judicial de Carlos Luis Fallas a Limón",
         "node_type": "event",
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 3,
-        "year_start": null,
-        "year_end": null,
+        "sequence_value": 0,
+        "year_start": 1933,
+        "year_end": 1933,
         "source_location": "alajuela",
         "target_location": "limon",
         "directed_location": true,
         "source_other": "poder_judicial_cr",
         "target_other": "calufa",
         "directed_other": false,
-        "description_en": "Carlos Luis Fallas was deported to Limón.",
-        "description_es": "Carlos Luis Fallas es deportado a Limón.",
+        "description_en": "Following a strike organized in Alajuela, judicial authorities sentenced Carlos Luis Fallas to confinement (confinamiento) in Limón, where he arrives in December 1933. This was a common legal penalty at the time, used to isolate political and labor leaders from their active organizational bases. While in Limón, Fallas utilized his previous experience working for the banana companies to inform the Communist Party leadership in San José about the labor and sanitary conditions in the Atlantic zone.",
+        "description_es": "Tras una huelga que organizó en Alajuela, las autoridades judiciales sentenciaron a Carlos Luis Fallas a la pena de confinamiento en Limón, adonde llega en diciembre de 1933. Esta era una sanción legal común en la época, utilizada para aislar a líderes políticos y sindicales de sus bases organizativas activas. Durante su estancia en Limón, Fallas aprovechó su experiencia previa trabajando para las bananeras para informar a la dirigencia del Partido Comunista en San José sobre las condiciones laborales y sanitarias en la zona atlántica.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
@@ -1596,13 +1488,13 @@
       },
       "properties": {
         "id": "malaria_remote_1934",
-        "label_en": "Malaria Outbreak In Remote Plantations",
-        "label_es": "Paludismo en las fincas remotas",
+        "label_en": "Malaria Outbreak: Remote Plantations",
+        "label_es": "Brote de malaria: Fincas remotas",
         "node_type": "event",
         "node_subtype": "disease",
         "mapped": true,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 0,
+        "sequence_value": 1,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": null,
@@ -1611,8 +1503,8 @@
         "source_other": null,
         "target_other": null,
         "directed_other": false,
-        "description_en": null,
-        "description_es": null,
+        "description_en": "Jaime Cerdas Mora states that in remote plantations, malaria cases were frequent due to workers living in flooded barracks (ranchones). He estimates that half of the workers were unable to work half of the time because of the disease.",
+        "description_es": "Jaime Cerdas Mora afirma que en fincas remotas, los casos de malaria eran frecuentes debido a que los trabajadores vivían en barracones (ranchones) inundados. Estima que la mitad de los trabajadores no podía laborar la mitad del tiempo a causa de la enfermedad.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
@@ -1632,13 +1524,13 @@
       },
       "properties": {
         "id": "malaria_guapiles_1934",
-        "label_en": "Malaria Outbreak Near Guápiles",
-        "label_es": "Paludismo en las fincas de Guápiles",
+        "label_en": "Malaria Outbreak: Guápiles Sector",
+        "label_es": "Brote de malaria: Sector Guápiles",
         "node_type": "event",
         "node_subtype": "disease",
         "mapped": true,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 0,
+        "sequence_value": 1,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": null,
@@ -1647,8 +1539,8 @@
         "source_other": null,
         "target_other": null,
         "directed_other": false,
-        "description_en": null,
-        "description_es": null,
+        "description_en": "Jaime Cerdas Mora reports a lack of medical infrastructure in the Guápiles sector. He notes that there were no resident doctors or local hospitals, leaving workers without immediate care during malaria outbreaks.",
+        "description_es": "Jaime Cerdas Mora informa sobre la falta de infraestructura médica en el sector de Guápiles. Señala que no había médicos residentes ni hospitales locales, lo que dejaba a los trabajadores sin atención inmediata durante los brotes de malaria.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
@@ -1662,10 +1554,10 @@
       "geometry": null,
       "properties": {
         "id": "sick_workers_1934_001",
-        "label_en": "Sick Workers Sent to Limón's Hospital",
-        "label_es": "Obreros enfermos son enviados al Hospital de Limón",
-        "node_type": "trade",
-        "node_subtype": "labor",
+        "label_en": "Sanitary Displacement: Remote Plantations to Limón",
+        "label_es": "Desplazamiento sanitario: Fincas remotas a Limón",
+        "node_type": "migration",
+        "node_subtype": "displacement",
         "mapped": false,
         "parent_event": "1934_banana_strike",
         "sequence_value": 2,
@@ -1677,8 +1569,8 @@
         "source_other": null,
         "target_other": null,
         "directed_other": false,
-        "description_en": "Sick workers are sent to Limón's Hospital.",
-        "description_es": "Obreros enfermos son enviados al Hospital de Limón.",
+        "description_en": "Cerdas explains that workers in remote areas, such as those near the Sixaola river, were forced to travel to the city of Limón to find a hospital. This required sick laborers to travel long distances from the plantations to the provincial capital.",
+        "description_es": "Cerdas explica que los trabajadores de zonas remotas, como las cercanas al río Sixaola, se veían obligados a trasladarse a la ciudad de Limón para encontrar un hospital. Esto requería que los obreros enfermos viajaran largas distancias desde las fincas hasta la capital provincial.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
@@ -1692,10 +1584,10 @@
       "geometry": null,
       "properties": {
         "id": "sick_workers_1934_002",
-        "label_en": "Sick Workers Sent to Siquirres",
-        "label_es": "Obreros enfermos son enviados a Siquirres",
-        "node_type": "trade",
-        "node_subtype": "labor",
+        "label_en": "Sanitary Displacement: Guápiles to Siquirres",
+        "label_es": "Desplazamiento sanitario: De Guápiles a Siquirres",
+        "node_type": "migration",
+        "node_subtype": "displacement",
         "mapped": false,
         "parent_event": "1934_banana_strike",
         "sequence_value": 2,
@@ -1707,14 +1599,314 @@
         "source_other": null,
         "target_other": null,
         "directed_other": false,
-        "description_en": "Sick workers are sent to Siquirres, where there's only a dispensary providing quinine.",
-        "description_es": "Obreros enfermos son enviados a Siquirres, donde sólo hay un dispensario que suministra quinina.",
+        "description_en": "Cerdas describes workers from Guápiles traveling to Siquirres for treatment. He identifies the facility there as a dispensary staffed by a nurse rather than a doctor, where quinine was the only medicine provided.",
+        "description_es": "Cerdas describe a los trabajadores de Guápiles viajando a Siquirres para recibir tratamiento. Identifica la instalación allí como un dispensario atendido por un enfermero en lugar de un médico, donde la quinina era el único medicamento suministrado.",
         "panel_html": false,
         "image_path": null,
         "source": "cerdas_1984",
         "citation": null,
         "page": "87",
         "country": "Costa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "comisariatos_1934_strike",
+        "label_en": "Commissaries and the Double Exploitation of Workers",
+        "label_es": "Los comisariatos y la doble explotación obrera",
+        "node_type": "event",
+        "node_subtype": null,
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 3,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "UFCo and plantation-linked comisariatos formed a system of economic dependency across the Atlantic banana zone. Workers were frequently paid with coupons or tokens redeemable only at plantation commissaries, where goods were sold at inflated prices. According to Jaime Cerdas, this arrangement compounded already poor wages and living conditions, reinforcing what he described as a “double exploitation” of banana workers through both labor and controlled consumption.",
+        "description_es": "Los comisariatos vinculados a la UFCo y a las fincas bananeras formaban un sistema de dependencia económica a lo largo de la zona bananera atlántica. Con frecuencia, los trabajadores eran pagados mediante cupones o chapas que solo podían utilizarse en los comisariatos de las plantaciones, donde los productos se vendían a precios elevados. Según el relato de Jaime Cerdas, este sistema agravaba los bajos salarios y las malas condiciones de vida, produciendo una “doble explotación” de los trabajadores bananeros a través tanto del trabajo como del consumo controlado.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": null,
+        "country": "Costa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "demands_strike_1934",
+        "label_en": "Presentation and Rejection of the List of Demands",
+        "label_es": "Presentación y rechazo del pliego de peticiones",
+        "node_type": "information",
+        "node_subtype": "correspondence",
+        "mapped": false,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 4,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": "san_jose",
+        "target_location": "puerto_limon",
+        "directed_location": true,
+        "source_other": "partido_comunista_cr",
+        "target_other": "chittenden",
+        "directed_other": true,
+        "description_en": "Based on the account by Jaime Cerdas Mora, the Communist Party drafted a formal list of demands (pliego de peticiones) and organized strike committees across the various banana plantations. The document was presented to the manager of the United Fruit Company, George P. Chittenden, who refused to receive it.",
+        "description_es": "Según el relato de Jaime Cerdas Mora, el Partido Comunista redactó un pliego de peticiones formal y organizó comités de huelga en las diversas fincas bananeras. El documento fue presentado al gerente de la United Fruit Company, George P. Chittenden, quien se negó a recibirlo.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "87",
+        "country": "Costa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "worker_meeting_01_1934",
+        "label_en": "Leadership Deployment to 26 Millas",
+        "label_es": "Despliegue de la dirigencia hacia 26 Millas",
+        "node_type": "event",
+        "node_subtype": "movement",
+        "mapped": false,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 5,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": "limon",
+        "target_location": "26_millas",
+        "directed_location": true,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "Following the rejection of the workers’ petition by UFCo manager George P. Chittenden. Workers held a meeting around August 7, 1934 and agreed to go on strike. Strike committees had already been organized across multiple plantations, and Carlos Luis Fallas and Jaime Cerdas were tasked with directing the movement. Traveling by train to Madre de Dios and then on foot toward  26 Millas, they established the principal operational headquarters of the strike near the finca Los Ángeles. According to Cerdas’ account, delegations from plantations across the Atlantic banana corridor were already gathering there upon their arrival.",
+        "description_es": "Tras el rechazo del pliego de peticiones de los trabajadores por parte del gerente de la UFCo, George P. Chittenden. Los obreros sostuvieron una reunión cerca del 7 de agosto de 1934, en la que se acordó ir a huelga. Para entonces, ya se habían organizado comités de huelga en múltiples plantaciones, y Carlos Luis Fallas y Jaime Cerdas fueron encargados de dirigir el movimiento. Viajando en tren hasta Madre de Dios y luego a pie hacia 26 Millas, establecieron el principal cuartel operativo de la huelga cerca de la finca Los Ángeles. Según el relato de Cerdas, delegaciones de plantaciones a lo largo del corredor bananero atlántico ya se estaban reuniendo allí al momento de su llegada.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "87",
+        "country": "Costa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "declaration_strike_1934",
+        "label_en": "Declaration of Strike",
+        "label_es": "Declaración de la huelga",
+        "node_type": "information",
+        "node_subtype": "correspondence",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 6,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": "26_millas",
+        "target_location": "puerto_limon",
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "On August 9, 1934, strike leaders formally declared the beginning of the banana strike. The declaration marked the transition from localized labor grievances to a coordinated regional movement across the Atlantic banana zone.",
+        "description_es": "El 9 de agosto de 1934, los dirigentes huelguistas declararon formalmente el inicio de la huelga bananera. La declaración marcó la transición de reclamos laborales localizados hacia un movimiento coordinado a escala regional en la zona bananera atlántica.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "87–88",
+        "country": "Costa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.299,
+          10.065
+        ]
+      },
+      "properties": {
+        "id": "1934_strike_marker_001",
+        "label_en": "Paralysis of the Atlantic Region",
+        "label_es": "La paralización de la zona atlántica",
+        "node_type": "event",
+        "node_subtype": "strike",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 7,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
+        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "88",
+        "country": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.05,
+          10.0
+        ]
+      },
+      "properties": {
+        "id": "1934_strike_marker_002",
+        "label_en": "Paralysis of the Atlantic Region",
+        "label_es": "La paralización de la zona atlántica",
+        "node_type": "event",
+        "node_subtype": "strike",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 7,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
+        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "88",
+        "country": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.958,
+          9.978
+        ]
+      },
+      "properties": {
+        "id": "1934_strike_marker_003",
+        "label_en": "Paralysis of the Atlantic Region",
+        "label_es": "La paralización de la zona atlántica",
+        "node_type": "event",
+        "node_subtype": "strike",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 7,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
+        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "88",
+        "country": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.12,
+          9.98
+        ]
+      },
+      "properties": {
+        "id": "1934_strike_marker_004",
+        "label_en": "Paralysis of the Atlantic Region",
+        "label_es": "La paralización de la zona atlántica",
+        "node_type": "event",
+        "node_subtype": "strike",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 7,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
+        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "88",
+        "country": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.621,
+          9.527
+        ]
+      },
+      "properties": {
+        "id": "1934_strike_marker_005",
+        "label_en": "Paralysis of the Atlantic Region",
+        "label_es": "La paralización de la zona atlántica",
+        "node_type": "event",
+        "node_subtype": "strike",
+        "mapped": true,
+        "parent_event": "1934_banana_strike",
+        "sequence_value": 7,
+        "year_start": 1934,
+        "year_end": 1934,
+        "source_location": null,
+        "target_location": null,
+        "directed_location": false,
+        "source_other": null,
+        "target_other": null,
+        "directed_other": false,
+        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
+        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
+        "panel_html": false,
+        "image_path": null,
+        "source": "cerdas_1984",
+        "citation": null,
+        "page": "88",
+        "country": null
       }
     },
     {
@@ -1728,7 +1920,7 @@
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 5,
+        "sequence_value": 9,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": "worker_arrests_1934",
@@ -1764,7 +1956,7 @@
         "node_subtype": "coercion",
         "mapped": true,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 4,
+        "sequence_value": 8,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": null,
@@ -1794,7 +1986,7 @@
         "node_subtype": "coercion",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 6,
+        "sequence_value": 10,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": "limon",
@@ -1824,7 +2016,7 @@
         "node_subtype": "violence",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 7,
+        "sequence_value": 11,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": "26_millas",
@@ -1848,13 +2040,13 @@
       "geometry": null,
       "properties": {
         "id": "fallas_deposition_1934",
-        "label_en": "Deposition of Carlos Luis Fallas: Labor and Sanitary Conditions",
-        "label_es": "Deposición de Carlos Luis Fallas: Condiciones laborales y sanitarias",
+        "label_en": "Deposition of Carlos Luis Fallas",
+        "label_es": "Deposición de Carlos Luis Fallas",
         "node_type": "event",
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 8,
+        "sequence_value": 13,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": "26_millas",
@@ -1926,7 +2118,7 @@
         "node_subtype": "mediation",
         "mapped": true,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 9,
+        "sequence_value": 12,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": null,
@@ -1956,7 +2148,7 @@
         "node_subtype": "mediation",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 9,
+        "sequence_value": 13,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": "palacio_nacional",
@@ -1986,7 +2178,7 @@
         "node_subtype": "violence",
         "mapped": false,
         "parent_event": "1934_banana_strike",
-        "sequence_value": 10,
+        "sequence_value": 14,
         "year_start": 1934,
         "year_end": 1934,
         "source_location": null,
@@ -2111,192 +2303,6 @@
         "citation": null,
         "page": null,
         "country": "Panama"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "sample_shipment",
-        "label_en": "Sample Shipment",
-        "label_es": "Ejemplo de cargamento",
-        "node_type": "trade",
-        "node_subtype": "shipment",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": "puerto_limon",
-        "target_location": "port_boston",
-        "directed_location": true,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "sample_shipment_2",
-        "label_en": "Sample Shipment",
-        "label_es": "Ejemplo de cargamento",
-        "node_type": "trade",
-        "node_subtype": "shipment",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": "puerto_limon",
-        "target_location": "port_boston",
-        "directed_location": true,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "sample_shipment_3",
-        "label_en": "Sample Shipment",
-        "label_es": "Ejemplo de cargamento",
-        "node_type": "trade",
-        "node_subtype": "shipment",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": "puerto_limon",
-        "target_location": "port_new_orleans",
-        "directed_location": true,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "sample_capital",
-        "label_en": "Sample Capital Flow",
-        "label_es": "Ejemplo de flujo de capital",
-        "node_type": "trade",
-        "node_subtype": "capital",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": "boston",
-        "target_location": "puerto_limon",
-        "directed_location": true,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "id": "sample_migration",
-        "label_en": "Sample Migration",
-        "label_es": "Ejemplo de migración",
-        "node_type": "trade",
-        "node_subtype": "labor",
-        "mapped": false,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": "kingston",
-        "target_location": "puerto_limon",
-        "directed_location": true,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -76.792,
-          17.9927
-        ]
-      },
-      "properties": {
-        "id": "kingston",
-        "label_en": "Kingston",
-        "label_es": "Kingston",
-        "node_type": "place",
-        "node_subtype": "city",
-        "mapped": true,
-        "parent_event": null,
-        "sequence_value": null,
-        "year_start": null,
-        "year_end": null,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": null,
-        "description_es": null,
-        "panel_html": false,
-        "image_path": null,
-        "source": null,
-        "citation": null,
-        "page": null,
-        "country": "Jamaica"
       }
     }
   ]
