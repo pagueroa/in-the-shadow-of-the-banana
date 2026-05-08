@@ -32,6 +32,17 @@
 <!-- SIDE PANEL -->
 <div id="side-panel"></div>
 
+<!-- LEGEND PANEL -->
+<div id="legend-panel">
+  <div id="legend-panel-header">
+    <span>Legend</span>
+    <button id="legend-panel-close">×</button>
+  </div>
+  <div id="legend-panel-body"></div>
+</div>
+
+<button id="legend-btn" data-i18n="legend">Legend</button>
+
 <!-- TEMPORAL BAR -->
 <div id="temporal-bar">
   <span data-i18n="year"></span>
@@ -59,12 +70,6 @@
     <span data-i18n="search_filter"></span>
     <span id="filter-toggle-icon">▶</span>
   </div>
-  
-  <div id="legend-header">
-    <span data-i18n="legend"></span>
-  </div>
-
-  <div id="filter-legend"></div>
 
   <div id="filter-body" class="collapsed">
     <input type="text" id="search-input" data-i18n-placeholder="search_placeholder"/>
@@ -100,6 +105,7 @@
 <script src="js/sequence.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/data.js"></script>
+<script src="js/legend.js"></script>
 
 </body>
 </html>

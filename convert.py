@@ -193,19 +193,6 @@ def merge_geometry(csv_file, geometry_file, output_file, geometry_type):
 
 
 # ============================================================
-# CONVERT TRANSLATIONS FROM JSON TO JS
-# ============================================================
-
-def translations_to_js(json_file, js_file):
-    with open(json_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    js = 'var ui = ' + json.dumps(data, indent=2, ensure_ascii=False) + ';\n'
-    with open(js_file, 'w', encoding='utf-8') as f:
-        f.write(js)
-    print(f'Translations done — {js_file} generated')
-
-
-# ============================================================
 # RUN ALL CONVERSIONS
 # ============================================================
 

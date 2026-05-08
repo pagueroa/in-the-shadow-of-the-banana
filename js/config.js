@@ -46,6 +46,10 @@ function updateLanguage() {
     if (ui[currentLang][key]) el.setAttribute('placeholder', ui[currentLang][key]);
   });
 
+  // Update legend button
+  var legendBtn = document.getElementById('legend-btn');
+  if (legendBtn) legendBtn.textContent = ui[currentLang].legend;
+
   // Update language toggle buttons
   document.getElementById('lang-btn-en').classList.toggle('lang-active', currentLang === 'en');
   document.getElementById('lang-btn-es').classList.toggle('lang-active', currentLang === 'es');

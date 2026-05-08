@@ -1454,7 +1454,7 @@
         "id": "calufa_deportation",
         "label_en": "Judicial Confinement of Carlos Luis Fallas to Limón",
         "label_es": "Confinamiento judicial de Carlos Luis Fallas a Limón",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
@@ -1611,13 +1611,19 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0338,
+          9.9902
+        ]
+      },
       "properties": {
         "id": "comisariatos_1934_strike",
         "label_en": "Commissaries and the Double Exploitation of Workers",
         "label_es": "Los comisariatos y la doble explotación obrera",
         "node_type": "event",
-        "node_subtype": null,
+        "node_subtype": "exploitation",
         "mapped": true,
         "parent_event": "1934_banana_strike",
         "sequence_value": 3,
@@ -1734,80 +1740,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.299,
-          10.065
-        ]
-      },
-      "properties": {
-        "id": "1934_strike_marker_001",
-        "label_en": "Paralysis of the Atlantic Region",
-        "label_es": "La paralización de la zona atlántica",
-        "node_type": "event",
-        "node_subtype": "strike",
-        "mapped": true,
-        "parent_event": "1934_banana_strike",
-        "sequence_value": 7,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
-        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
-        "panel_html": false,
-        "image_path": null,
-        "source": "cerdas_1984",
-        "citation": null,
-        "page": "88",
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.05,
-          10.0
-        ]
-      },
-      "properties": {
-        "id": "1934_strike_marker_002",
-        "label_en": "Paralysis of the Atlantic Region",
-        "label_es": "La paralización de la zona atlántica",
-        "node_type": "event",
-        "node_subtype": "strike",
-        "mapped": true,
-        "parent_event": "1934_banana_strike",
-        "sequence_value": 7,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
-        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
-        "panel_html": false,
-        "image_path": null,
-        "source": "cerdas_1984",
-        "citation": null,
-        "page": "88",
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -82.958,
-          9.978
+          -83.3554907,
+          10.0877643
         ]
       },
       "properties": {
@@ -1834,79 +1768,7 @@
         "source": "cerdas_1984",
         "citation": null,
         "page": "88",
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.12,
-          9.98
-        ]
-      },
-      "properties": {
-        "id": "1934_strike_marker_004",
-        "label_en": "Paralysis of the Atlantic Region",
-        "label_es": "La paralización de la zona atlántica",
-        "node_type": "event",
-        "node_subtype": "strike",
-        "mapped": true,
-        "parent_event": "1934_banana_strike",
-        "sequence_value": 7,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
-        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
-        "panel_html": false,
-        "image_path": null,
-        "source": "cerdas_1984",
-        "citation": null,
-        "page": "88",
-        "country": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -82.621,
-          9.527
-        ]
-      },
-      "properties": {
-        "id": "1934_strike_marker_005",
-        "label_en": "Paralysis of the Atlantic Region",
-        "label_es": "La paralización de la zona atlántica",
-        "node_type": "event",
-        "node_subtype": "strike",
-        "mapped": true,
-        "parent_event": "1934_banana_strike",
-        "sequence_value": 7,
-        "year_start": 1934,
-        "year_end": 1934,
-        "source_location": null,
-        "target_location": null,
-        "directed_location": false,
-        "source_other": null,
-        "target_other": null,
-        "directed_other": false,
-        "description_en": "By the day following its formal declaration, the 1934 banana strike had spread across the Atlantic banana zone. According to Jaime Cerdas, plantations throughout the region had already joined the movement, paralyzing production, transportation, and UFCo operations across the corridor.",
-        "description_es": "Para el día siguiente de su declaración formal, la huelga bananera de 1934 ya se había extendido por toda la zona bananera atlántica. Según Jaime Cerdas, plantaciones a lo largo de la región se habían incorporado al movimiento, paralizando la producción, el transporte y las operaciones de la UFCo en todo el corredor bananero.",
-        "panel_html": false,
-        "image_path": null,
-        "source": "cerdas_1984",
-        "citation": null,
-        "page": "88",
-        "country": null
+        "country": "Costa Rica"
       }
     },
     {
@@ -1916,7 +1778,7 @@
         "id": "habeas_corpus_1934",
         "label_en": "Habeas Corpus for Arrested Workers",
         "label_es": "Habeas corpus de huelguistas arrestados",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
@@ -1952,7 +1814,7 @@
         "id": "worker_arrests_1934",
         "label_en": "Arrest of Striking Workers",
         "label_es": "Arresto de huelguistas",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "coercion",
         "mapped": true,
         "parent_event": "1934_banana_strike",
@@ -1982,7 +1844,7 @@
         "id": "police_bananas_1934_001",
         "label_en": "Police Cut and Gather Bananas",
         "label_es": "La Fuerza Pública corta y recoge el banano",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "coercion",
         "mapped": false,
         "parent_event": "1934_banana_strike",
@@ -2012,7 +1874,7 @@
         "id": "police_bananas_1934_002",
         "label_en": "Workers Destroy Bananas",
         "label_es": "Obreros destruyen banano",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "violence",
         "mapped": false,
         "parent_event": "1934_banana_strike",
@@ -2042,7 +1904,7 @@
         "id": "fallas_deposition_1934",
         "label_en": "Deposition of Carlos Luis Fallas",
         "label_es": "Deposición de Carlos Luis Fallas",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
@@ -2079,7 +1941,7 @@
         "label_en": "Palacio Nacional (1858–1955)",
         "label_es": "Palacio Nacional (1858–1955)",
         "node_type": "place",
-        "node_subtype": "state",
+        "node_subtype": "public_site",
         "mapped": true,
         "parent_event": null,
         "sequence_value": null,
@@ -2144,8 +2006,8 @@
         "id": "santos_inspection_1934",
         "label_en": "Ministerial Site Inspection of 26 Millas",
         "label_es": "Inspección ministerial en 26 Millas",
-        "node_type": "event",
-        "node_subtype": "mediation",
+        "node_type": "action",
+        "node_subtype": "legal",
         "mapped": false,
         "parent_event": "1934_banana_strike",
         "sequence_value": 13,
@@ -2174,7 +2036,7 @@
         "id": "sabotage_1934",
         "label_en": "Countermanded Order of Sabotage",
         "label_es": "Contraorden de sabotaje",
-        "node_type": "event",
+        "node_type": "action",
         "node_subtype": "violence",
         "mapped": false,
         "parent_event": "1934_banana_strike",

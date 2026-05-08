@@ -98,12 +98,12 @@ function showFullPanel(entry) {
     })
     .then(function(html) {
       var panel = document.getElementById('side-panel');
-      panel.innerHTML = html;
+      panel.innerHTML = '';
 
-      // Apply current language class to html-root so lang-block CSS works
-      document.getElementById('html-root').lang = currentLang;
+      // Sticky header
+      var stickyHeader = document.createElement('div');
+      stickyHeader.id = 'panel-sticky-header';
 
-      // Add close button
       var closeBtn = document.createElement('button');
       closeBtn.id          = 'panel-close';
       closeBtn.textContent = '×';
@@ -112,38 +112,47 @@ function showFullPanel(entry) {
         panel.innerHTML = '';
         activeEntry = null;
       });
-      panel.insertBefore(closeBtn, panel.firstChild);
+      stickyHeader.appendChild(closeBtn);
 
+      // Scrollable content wrapper
+      var contentWrapper = document.createElement('div');
+      contentWrapper.id        = 'panel-scroll-content';
+      contentWrapper.innerHTML = html;
+
+      panel.appendChild(stickyHeader);
+      panel.appendChild(contentWrapper);
       panel.classList.add('panel-open');
 
+      // Apply current language
+      document.getElementById('html-root').lang = currentLang;
+
       // Internal links
-      panel.querySelectorAll('.full-panel-connection-link, .full-panel-body a').forEach(function(link) {
+      contentWrapper.querySelectorAll('.full-panel-connection-link, .full-panel-body a').forEach(function(link) {
         link.addEventListener('click', function(e) {
           var href  = this.getAttribute('href');
           var id    = href.replace('.html', '').replace('../panels/', '').replace('panels/', '');
-          var entry = allEntries.find(function(e) { return e.properties.id === id; });
-          if (!entry) return;
+          var found = allEntries.find(function(e) { return e.properties.id === id; });
+          if (!found) return;
           e.preventDefault();
-          openPanel(entry);
-          if (entry.properties.parent_event && entry.properties.parent_event !== 'TRUE') {
-            showChildEvent(entry);
+          openPanel(found);
+          if (found.properties.parent_event && found.properties.parent_event !== 'TRUE') {
+            showChildEvent(found);
           }
         });
       });
 
-      // Sequence play buttons if present
-      var seqBtn = panel.querySelector('.sequence-play-btn');
+      // Sequence play buttons
+      var seqBtn = contentWrapper.querySelector('.sequence-play-btn');
       if (seqBtn) {
         seqBtn.addEventListener('click', function() {
           var parentId = this.getAttribute('data-parent-id');
-          document.getElementById('side-panel').classList.remove('panel-open');
+          panel.classList.remove('panel-open');
           startSequence(parentId);
         });
       }
     })
     .catch(function(err) {
       console.error('Failed to load panel:', err);
-      // Fall back to popup if panel file missing
       showPopup(entry);
     });
 }

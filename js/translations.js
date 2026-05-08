@@ -15,27 +15,36 @@ var ui = {
       "infrastructure": "Infrastructure",
       "institution": "Institution",
       "event": "Event",
+      "action": "Action",
       "information": "Information",
       "person": "Person",
       "source": "Source",
-      "trade": "Trade"
+      "trade": "Trade",
+      "migration": "Migracion"
     },
     "subtypes": {
+      //Place
       "city": "City",
       "public_site": "Public site",
       "worker_site": "Worker site",
+      //Infrastructure
       "port": "Port",
       "railroad": "Railroad",
       "company_town": "Company town",
       "plantation": "Plantation",
       "office": "Office",
       "vessel": "Vessel",
+      //Institution
       "state": "State",
       "company": "Company",
       "organization": "Organization",
+      //Events
       "strike": "Strike",
+      "exploitation": "Exploitation",
+      "mediation": "Mediation",
       "disease": "Disease",
       "natural": "Natural event",
+      //Person
       "ufco_manager": "UFCo manager",
       "plantation_owner": "Plantation owner",
       "worker": "Worker",
@@ -43,17 +52,24 @@ var ui = {
       "politician": "Politician",
       "official": "Official",
       "military": "Military",
+      //Action
       "coercion": "Coercion",
       "violence": "Violence",
+      "movement": "Movement",
       "legal": "Legal",
+      //Information
       "correspondence": "Correspondence",
       "report": "Report",
       "press": "Press",
       "advertisement": "Advertisement",
       "notice": "Notice",
+      //Trade
       "capital": "Capital",
       "shipment": "Shipment",
       "labor": "Labor",
+      //Migration
+      "displacement": "Displacement",
+      //Source
       "worker_testimony": "Worker testimony"
     }
   },
@@ -73,15 +89,19 @@ var ui = {
       "infrastructure": "Infraestructura",
       "institution": "Institución",
       "event": "Evento",
+      "action": "Acción",
       "information": "Información",
       "person": "Persona",
       "source": "Fuente",
-      "trade": "Comercio"
+      "trade": "Comercio",
+      "migration": "Migración"
     },
     "subtypes": {
+      //Lugar
       "city": "Ciudad",
       "public_site": "Sitio público",
       "worker_site": "Sitio obrero",
+      //Infraestructura
       "port": "Puerto",
       "railroad": "Ferrocarril",
       "company_town": "Enclave",
@@ -91,9 +111,13 @@ var ui = {
       "state": "Estado",
       "company": "Empresa",
       "organization": "Organización",
+      //Evento
       "strike": "Huelga",
+      "exploitation": "Explotación",
+      "mediation": "Mediación",
       "disease": "Enfermedad",
       "natural": "Evento natural",
+      //Persona
       "ufco_manager": "Gerente de UFCo",
       "plantation_owner": "Dueño de finca",
       "worker": "Obrero",
@@ -101,17 +125,23 @@ var ui = {
       "politician": "Político",
       "official": "Funcionario",
       "military": "Militar",
+      //Acción
       "coercion": "Coerción",
       "violence": "Violencia",
       "legal": "Legal",
+      //Información
       "correspondence": "Correspondencia",
       "report": "Informe",
       "press": "Prensa",
       "advertisement": "Publicidad",
       "notice": "Comunicado",
+      //Comercio
       "capital": "Capital",
       "shipment": "Cargamento",
       "labor": "Mano de obra",
+      //Migracion
+      "displacement": "Desplazamiento",
+      //Fuente
       "worker_testimony": "Testimonio obrero"
     }
   }

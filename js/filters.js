@@ -39,77 +39,10 @@ function updateFilterLabels() {
       label.textContent = ui[currentLang].subtypes[parts[1]] || parts[1];
     }
   });
-
-    // Rebuild legend to update language
-  if (allEntries.length > 0) {
-    buildLegend();
+  
+  if (allEntries.length > 0 && document.getElementById('legend-panel').classList.contains('legend-open')) {
+    buildLegendPanel();
   }
-}
-
-// ============================================================
-// LEGEND
-// Generates legend when search/filter menu is closed
-// ============================================================
-
-function buildLegend() {
-  var legend = document.getElementById('filter-legend');
-  legend.innerHTML = '';
-
-  // Entry types
-  allEntries.forEach(function(entry) {
-    var p = entry.properties;
-    if (p.source_location || p.source_other ||
-        p.target_location || p.target_other) return;
-    if (p.node_type === 'source') return;
-    if (p.parent_event && p.parent_event !== 'TRUE') return;
-    if (legend.querySelector('[data-legend="' + p.node_type + '-' + p.node_subtype + '"]')) return;
-
-    var style = entryStyles[p.node_type] && entryStyles[p.node_type][p.node_subtype]
-      ? entryStyles[p.node_type][p.node_subtype]
-      : entryStyles.default;
-
-    var item = document.createElement('div');
-    item.className = 'filter-item';
-    item.setAttribute('data-legend', p.node_type + '-' + p.node_subtype);
-
-    var dot = document.createElement('span');
-    dot.style.cssText = 'display:inline-flex;align-items:center;flex-shrink:0;';
-    dot.innerHTML = buildSVGMarker({ color: style.color, shape: style.shape, radius: 4 });
-
-    var label = document.createElement('span');
-    label.style.cssText = 'font-size:11px;color:#8a7a5a;letter-spacing:0.5px;';
-    label.textContent = ui[currentLang].subtypes[p.node_subtype] || p.node_subtype || ui[currentLang].types[p.node_type] || p.node_type;
-
-    item.appendChild(dot);
-    item.appendChild(label);
-    legend.appendChild(item);
-  });
-
-  // Relation types
-  allRelations.forEach(function(relation) {
-    var rp = relation.properties;
-    if (!rp.node_type || !rp.node_subtype) return;
-    if (legend.querySelector('[data-legend="' + rp.node_type + '-' + rp.node_subtype + '"]')) return;
-
-    var style = relationStyles[rp.node_type] && relationStyles[rp.node_type][rp.node_subtype]
-      ? relationStyles[rp.node_type][rp.node_subtype]
-      : relationStyles.default;
-
-    var item = document.createElement('div');
-    item.className = 'filter-item';
-    item.setAttribute('data-legend', rp.node_type + '-' + rp.node_subtype);
-
-    var line = document.createElement('span');
-    line.style.cssText = 'width:16px;height:0;border-top:2px dashed ' + style.color + ';flex-shrink:0;display:inline-block;';
-
-    var label = document.createElement('span');
-    label.style.cssText = 'font-size:11px;color:#8a7a5a;letter-spacing:0.5px;';
-    label.textContent = ui[currentLang].subtypes[rp.node_subtype] || rp.node_subtype;
-
-    item.appendChild(line);
-    item.appendChild(label);
-    legend.appendChild(item);
-  });
 }
 
 function buildFilters() {
@@ -170,10 +103,12 @@ function buildFilters() {
 
       var dot = document.createElement('span');
       dot.style.cssText = 'display:inline-flex;align-items:center;flex-shrink:0;';
+      var legendRadius = style.shape === 'image' ? 8 : 4;
       dot.innerHTML = buildSVGMarker({
         color:  style.color  || '#d4c5a9',
         shape:  style.shape  || 'circle',
-        radius: 4
+        radius: legendRadius,
+        iconUrl: style.iconUrl
       });
 
       var label = document.createElement('label');
@@ -223,10 +158,12 @@ function buildFilters() {
 
         var subDot = document.createElement('span');
         subDot.style.cssText = 'display:inline-flex;align-items:center;flex-shrink:0;';
+        var subLegendRadius = subtypeStyle.shape === 'image' ? 8 : 4;
         subDot.innerHTML     = buildSVGMarker({
           color:  subtypeStyle.color  || '#d4c5a9',
           shape:  subtypeStyle.shape  || 'circle',
-          radius: 4
+          radius: subLegendRadius,
+          iconUrl: subtypeStyle.iconUrl
         });
 
         var subLabel = document.createElement('label');
@@ -297,8 +234,6 @@ function buildFilters() {
     ui[currentLang].subtypes,
     true
   );
-
-  buildLegend();
 
 }
 
