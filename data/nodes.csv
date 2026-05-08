@@ -23,7 +23,7 @@ la_perla,La Perla Plantation,Finca La Perla,place,plantation,,,,,TRUE,-83.37737,
 sara,Sara Plantation (25 Millas),Finca Sara (25 Millas),place,plantation,,,,,TRUE,-83.34175,10.08604,Costa Rica,,,,,,,,,,,,
 24_millas,24 Millas,24 Millas,place,plantation,,,,,TRUE,-83.32227,10.08187,Costa Rica,,,,,,,,,,,,
 finca_costa_rica,Costa Rica Plantation,Finca Costa Rica,place,plantation,,,,,TRUE,-82.61357,9.50167,Costa Rica,,,,,,,"Furthermost plantation in the Atlantic region of Costa Rica, next to the Sixaola River.","Finca más remota en la región Atlántica, junto al río Sixaola.",,,cerdas_1984,86–87
-1934_banana_strike,Banana Strike of 1934,Huelga Bananera de 1934,event,strike,TRUE,,,,TRUE,-83.3554907,10.0877643,Costa Rica,,,,,,,,,TRUE,,,
+1934_banana_strike,Banana Strike of 1934,Huelga Bananera de 1934,event,strike,TRUE,,1934,1934,TRUE,-83.3554907,10.0877643,Costa Rica,,,,,,,,,TRUE,,,
 ufco,United Fruit Company,United Fruit Company,institution,company,,,1899,1984,FALSE,,,,,,,,,,,,TRUE,,,
 irca,International Railways of Central America,FFCC Internacionales de Centro America,institution,company,,,1904,1974,FALSE,,,,,,,,,,,,,,,
 boston_fruit_co,Boston Fruit Company,Boston Fruit Company,institution,company,,,1885,1899,FALSE,,,,,,,,,,,,,,,

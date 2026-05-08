@@ -27,9 +27,9 @@ var entryStyles = {
   },
 
   event: {
-    strike:       { color: '#4a9a8a', shape: 'star',     radius: 12  },
-    disease:      { color: '#7a9ab5', shape: 'star',     radius: 4  },
-    natural:      { color: '#5a7a55', shape: 'star',     radius: 4  },
+    strike:       { color: '#A8C500', shape: 'image', iconUrl: 'img/strike_icon.svg', radius: 25 },
+    disease:      { color: '#b8962a', shape: 'image', iconUrl: 'img/disease_icon.svg', radius: 15 },
+    natural:      { color: '#8ab8d8', shape: 'image', iconUrl: 'img/nature_icon.svg', radius: 15  },
   },
 
   person: {
@@ -56,7 +56,8 @@ var relationStyles = {
   event: {
     coercion: { color: '#c45c3a', weight: 1.5, dashArray: '2,2' },
     violence: { color: '#8a2020', weight: 2,   dashArray: '2,2' },
-    legal:    { color: '#7a9ab5', weight: 1,   dashArray: '4,2' }
+    legal:    { color: '#7a9ab5', weight: 1,   dashArray: '4,2' },
+    movement: { color: '#7a9ab5', weight: 2,   dashArray: '2,2'}
   },
  
   information: {

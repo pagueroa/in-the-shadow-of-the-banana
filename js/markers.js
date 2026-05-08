@@ -19,8 +19,8 @@ function buildSVGMarker(style) {
   var shape = '';
 
   if (style.shape === 'image') {
-  shape = '<image href="' + style.iconUrl + '" x="0" y="0" width="' + size + '" height="' + size + '"/>';
-  
+  shape = '<image href="' + style.iconUrl + '" x="4" y="4" width="' + (size - 8) + '" height="' + (size - 8) + '"/>';
+
   } else if (style.shape === 'circle') {
     shape = '<circle cx="' + c + '" cy="' + c + '" r="' + r + '" fill="' + style.color + '" stroke="#1a1a1a" stroke-width="1.5"/>';
 

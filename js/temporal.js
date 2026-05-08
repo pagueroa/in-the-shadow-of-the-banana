@@ -29,6 +29,7 @@ function initTemporalSlider(entries) {
 }
 
 function applyTemporalFilter(year) {
+  if (sequenceActive) return;
   currentYear = year;
 
   // Filter entry markers
@@ -41,7 +42,7 @@ function applyTemporalFilter(year) {
                  (p.year_end   === null || p.year_end   >= year);
     var el = marker.getElement();
     if (el) {
-      el.style.opacity       = active ? '1' : '0.1';
+      el.style.opacity       = active ? '1' : '0';
       el.style.pointerEvents = active ? 'auto' : 'none';
     }
   });
