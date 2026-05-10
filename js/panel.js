@@ -163,6 +163,7 @@ function showFullPanel(entry) {
 // ============================================================
 
 function showPopup(entry) {
+  
   var p = entry.properties;
 
   var typeLabel    = ui[currentLang].types[p.node_type]    || p.node_type    || '';
@@ -186,11 +187,42 @@ function showPopup(entry) {
     '</div>';
   }
 
+  if (p.source) {
+    var sourceEntry = allEntries.find(function(e) {
+     return e.properties.id === p.source;
+    });
+    if (sourceEntry) {
+      var pagePrefix = p.page && p.page.toString().match(/[-–]/) ? 'pp. ' : 'p. ';
+
+      content += '<div class="centroid-popup-source">' +
+        (sourceEntry.properties['label_' + currentLang] || sourceEntry.properties.label_en) +
+        (p.page ? ', ' + pagePrefix + p.page : '') +
+      '</div>';
+    }
+  }
+
+  var latlng = null;
+
   if (entry.geometry) {
     var coords = entry.geometry.coordinates;
+    latlng = [coords[1], coords[0]];
+  } else {
+    relationLayers.forEach(function(layer) {
+      if (!layer.relationData) return;
+      if (layer.relationData.properties.id !== p.id) return;
+      var latlngs = layer.getLatLngs();
+      if (latlngs.length > 0) {
+        latlng = latlngs[Math.floor(latlngs.length / 2)];
+      }
+    });
+    if (!latlng) latlng = map.getCenter();
+  }
+
+  if (latlng) {
     L.popup({ maxWidth: 260 })
-      .setLatLng([coords[1], coords[0]])
+      .setLatLng(latlng)
       .setContent(content)
       .openOn(map);
   }
+
 }

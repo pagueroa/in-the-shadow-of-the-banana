@@ -5,7 +5,7 @@
 // by alternating curve direction and increasing offset
 // ============================================================
 
-function computeBezierPoints(lat1, lng1, lat2, lng2, index, groupSize) {
+  function computeBezierPoints(lat1, lng1, lat2, lng2, index, wasSwapped) {
   var midLat = (lat1 + lat2) / 2;
   var midLng = (lng1 + lng2) / 2;
   var dLat   = lat2 - lat1;
@@ -16,6 +16,7 @@ function computeBezierPoints(lat1, lng1, lat2, lng2, index, groupSize) {
   // Single relation gets a gentle default curve
   // Multiple relations alternate sides with increasing offset
   var sign        = index % 2 === 0 ? 1 : -1;
+  if (wasSwapped) sign = -sign; //added
   var offsetIndex = Math.floor(index / 2) + 1;
   var magnitude   = len * 0.08 * sign * offsetIndex;
 
@@ -42,7 +43,7 @@ function drawRelation(relation, sourceCoords, targetCoords, index, wasSwapped, o
   var lat2   = targetCoords[1];
   var lng2   = targetCoords[0];
 
-  var points = computeBezierPoints(lat1, lng1, lat2, lng2, index);
+  var points = computeBezierPoints(lat1, lng1, lat2, lng2, index, wasSwapped);
   if (points.length === 0) return null;
 
   var lineOptions = {
@@ -124,16 +125,9 @@ function drawRelation(relation, sourceCoords, targetCoords, index, wasSwapped, o
     ? ui[currentLang].subtypes[p.node_subtype] || p.node_subtype
     : null;
 
-  line.bindPopup(
-    '<b>' + typeLabel + (subtypeLabel ? ' / ' + subtypeLabel : '') + '</b>' +
-    (p.year_start
-      ? '<br>' + p.year_start +
-        (p.year_end && p.year_end !== p.year_start
-          ? ' – ' + p.year_end : '')
-      : '') +
-    (p.source ? '<br>' + p.source : '') +
-    (p.description_en ? '<br><i>' + (p['description_' + currentLang] || p.description_en) + '</i>' : '')
-  );
+  line.on('click', function(e) {
+  openPanel(relation);
+  });
 
   line.relationData = relation;
 

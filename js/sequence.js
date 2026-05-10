@@ -98,7 +98,7 @@ function buildSequenceLayers(children) {
     var targetId = rp.target_location;
     if (!sourceId || !targetId) return;
     if (!entryCoords[sourceId] || !entryCoords[targetId]) return;
-    var key = sourceId + '||' + targetId;
+    var key = [sourceId, targetId].sort().join('||');
     if (!seqPairs[key]) seqPairs[key] = [];
     seqPairs[key].push(relation);
   });
@@ -112,7 +112,9 @@ function buildSequenceLayers(children) {
       var sourceCoords = entryCoords[sourceId];
       var targetCoords = entryCoords[targetId];
 
-      var line = drawRelation(relation, sourceCoords, targetCoords, i, false, { animated: true });
+      var parts      = key.split('||');
+      var wasSwapped = (sourceId !== parts[0]);
+      var line = drawRelation(relation, sourceCoords, targetCoords, i, wasSwapped, { animated: true });
 
       if (!line) return;
 
@@ -360,16 +362,39 @@ function showSequencePanel(step, currentSeq) {
       }
 
       // Build and open popup
-      var content = '';
+      var typeLabel    = ui[currentLang].types[p.node_type]    || p.node_type    || '';
+      var subtypeLabel = ui[currentLang].subtypes[p.node_subtype] || p.node_subtype || '';
+
+      var content =
+        '<div class="centroid-popup-type">' +
+          typeLabel + (subtypeLabel ? ' / ' + subtypeLabel : '') +
+        '</div>' +
+        '<div class="centroid-popup-label">' + (p['label_' + currentLang] || p.label_en || '') + '</div>';
+
       if (p.year_start) {
         content += '<div class="centroid-popup-dates">' +
           p.year_start + (p.year_end && p.year_end !== p.year_start ? ' \u2013 ' + p.year_end : '') +
-          '</div>';
+        '</div>';
       }
+
       if (p['description_' + currentLang] || p.description_en) {
         content += '<div class="centroid-popup-description">' +
           (p['description_' + currentLang] || p.description_en) +
+        '</div>';
+      }
+
+      if (p.source) {
+        var sourceEntry = allEntries.find(function(e) {
+          return e.properties.id === p.source;
+        });
+        if (sourceEntry) {
+          var pagePrefix = p.page && p.page.toString().match(/[-–]/) ? 'pp. ' : 'p. ';
+
+          content += '<div class="centroid-popup-source">' +
+            (sourceEntry.properties['label_' + currentLang] || sourceEntry.properties.label_en) +
+            (p.page ? ', ' + pagePrefix + p.page : '') +
           '</div>';
+        }
       }
 
       if (popupLatLng && content) {

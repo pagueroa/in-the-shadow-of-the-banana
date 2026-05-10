@@ -110,10 +110,14 @@ document.getElementById('legend-btn').addEventListener('click', function() {
   document.body.classList.toggle('legend-panel-open');
   if (panel.classList.contains('legend-open')) {
     buildLegendPanel();
+    this.setAttribute('data-open', 'true');
+  } else {
+    this.removeAttribute('data-open');
   }
 });
 
 document.getElementById('legend-panel-close').addEventListener('click', function() {
   document.getElementById('legend-panel').classList.remove('legend-open');
   document.body.classList.remove('legend-panel-open');
+  document.getElementById('legend-btn').removeAttribute('data-open');
 });

@@ -121,43 +121,6 @@
   </div>
   {% endif %}
 
-  <!-- CONNECTIONS -->
-  {% if connections %}
-  <div class="full-panel-section">
-
-    <h2 class="full-panel-section-title">
-      <span class="lang-block en">{{ tr.en.connections }}</span>
-      <span class="lang-block es">{{ tr.es.connections }}</span>
-    </h2>
-
-    <ul class="full-panel-connections">
-      {% for conn in connections %}
-      <li class="full-panel-connection-item">
-
-        <a href="{{ conn.id }}.html" class="full-panel-connection-link">
-          <span class="lang-block en">{{ conn.label_en }}</span>
-          <span class="lang-block es">{{ conn.label_es }}</span>
-        </a>
-
-        <span class="full-panel-connection-meta">
-          {% if conn.relation_subtype %}
-            <span class="lang-block en">{{ tr.en.subtypes.get(conn.relation_subtype, conn.relation_subtype) }}</span>
-            <span class="lang-block es">{{ tr.es.subtypes.get(conn.relation_subtype, conn.relation_subtype) }}</span>
-          {% elif conn.relation_type %}
-            <span class="lang-block en">{{ tr.en.types.get(conn.relation_type, conn.relation_type) }}</span>
-            <span class="lang-block es">{{ tr.es.types.get(conn.relation_type, conn.relation_type) }}</span>
-          {% endif %}
-          {% if conn.year_start %} · {{ conn.year_start }}{% endif %}
-          {% if conn.directed %} →{% endif %}
-        </span>
-
-      </li>
-      {% endfor %}
-    </ul>
-
-  </div>
-  {% endif %}
-
   <!-- CITATIONS -->
   {% if citations %}
   <div class="full-panel-section">

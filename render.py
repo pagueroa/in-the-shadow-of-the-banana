@@ -12,7 +12,7 @@ from jinja2 import Environment, FileSystemLoader
 #
 # Inputs:
 #   data/nodes.geojson              — entry metadata and relations
-#   data/translations.json          — bilingual UI labels
+#   js/translations.js              — bilingual UI labels
 #   data/panels/[id].md             — bilingual content files
 #   templates/generic.html          — default template
 #   templates/source.html           — template for source entries
@@ -26,7 +26,7 @@ PANELS_MD_DIR   = 'data/panels'
 PANELS_OUT_DIR  = 'panels'
 TEMPLATES_DIR   = 'templates'
 GEOJSON_FILE    = 'data/nodes.geojson'
-TRANSLATIONS_FILE = 'data/translations.json'
+TRANSLATIONS_FILE = 'js/translations.js'
 
 # ============================================================
 # LOAD DATA
@@ -35,8 +35,19 @@ TRANSLATIONS_FILE = 'data/translations.json'
 with open(GEOJSON_FILE, 'r', encoding='utf-8') as f:
     geojson = json.load(f)
 
-with open(TRANSLATIONS_FILE, 'r', encoding='utf-8') as f:
-    tr = json.load(f)
+import re
+
+with open('js/translations.js', 'r', encoding='utf-8') as f:
+    js = f.read()
+
+# Strip var ui = and trailing semicolon
+js = re.sub(r'^\s*var\s+ui\s*=\s*', '', js.strip())
+js = re.sub(r';\s*$', '', js.strip())
+
+# Strip JS single-line comments
+js = re.sub(r'//[^\n]*', '', js)
+
+tr = json.loads(js)
 
 features = geojson['features']
 

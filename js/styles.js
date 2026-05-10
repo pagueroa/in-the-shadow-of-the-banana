@@ -28,6 +28,8 @@ var entryStyles = {
 
   event: {
     strike:           { color: '#A8C500', shape: 'image', iconUrl: 'img/strike_icon.svg', radius: 25 },
+    mediation:        { color: '#c8d4d8', shape: 'square',   radius: 7  },
+    confrontation:    { color: '#e8a245', shape: 'circle',  radius: 8  },
     disease:          { color: '#b8962a', shape: 'image', iconUrl: 'img/disease_icon.svg', radius: 15 },
     natural:          { color: '#8ab8d8', shape: 'image', iconUrl: 'img/nature_icon.svg', radius: 15 },
   },
@@ -53,7 +55,7 @@ var entryStyles = {
 
 var relationStyles = {
  
-  event: {
+  action: {
     coercion:           { color: '#c45c3a', weight: 1.5, dashArray: '2,2' },
     violence:           { color: '#8a2020', weight: 2,   dashArray: '2,2' },
     legal:              { color: '#7a9ab5', weight: 1,   dashArray: '4,2' },
@@ -72,6 +74,11 @@ var relationStyles = {
     capital:            { color: '#e8a245', weight: 1.5, dashArray: '8,4' },
     shipment:           { color: '#5a7a95', weight: 1.5, dashArray: '6,6' },
     labor:              { color: '#4a9a8a', weight: 1.5, dashArray: '6,4' }
+  },
+
+  migration: {
+    displacement:       { color: '#c4a882', weight: 2, dashArray: '6,3' },
+    deportation:        { color: '#a08878', weight: 2.5, dashArray: '6,3' }
   },
  
   default:              { color: '#d4c5a9', weight: 1, dashArray: '4,4' }

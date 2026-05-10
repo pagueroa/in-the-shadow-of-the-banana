@@ -644,11 +644,15 @@ body.lang-es h2.lang-block.es { display: block; }
   margin-right: 6px;
 }
 
+#legend-btn[data-open]::before {
+  content: '×';
+}
+
 #legend-btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   left: 20px;
   width: auto;
   height: auto;
@@ -922,6 +926,14 @@ body.legend-panel-open #filter-panel {
   font-size: 12px;
   color: #c4b599;
   line-height: 1.6;
+}
+
+.centroid-popup-source {
+  font-size: 11px;
+  color: #8a7a5a;
+  line-height: 1.5;
+  margin-top: 6px;
+  font-style: italic;
 }
 
 /* --- Sequence launch --- */

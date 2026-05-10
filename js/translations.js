@@ -20,7 +20,7 @@ var ui = {
       "person": "Person",
       "source": "Source",
       "trade": "Trade",
-      "migration": "Migracion"
+      "migration": "Migration"
     },
     "subtypes": {
       //Place
@@ -42,6 +42,7 @@ var ui = {
       "strike": "Strike",
       "exploitation": "Exploitation",
       "mediation": "Mediation",
+      "confrontation": "Confrontation",
       "disease": "Disease",
       "natural": "Natural event",
       //Person
@@ -69,6 +70,7 @@ var ui = {
       "labor": "Labor",
       //Migration
       "displacement": "Displacement",
+      "deportation": "Deportation",
       //Source
       "worker_testimony": "Worker testimony"
     }
@@ -115,6 +117,7 @@ var ui = {
       "strike": "Huelga",
       "exploitation": "Explotación",
       "mediation": "Mediación",
+      "confrontation": "Confrontación",
       "disease": "Enfermedad",
       "natural": "Evento natural",
       //Persona
@@ -141,6 +144,7 @@ var ui = {
       "labor": "Mano de obra",
       //Migracion
       "displacement": "Desplazamiento",
+      "deportation": "Deportación",
       //Fuente
       "worker_testimony": "Testimonio obrero"
     }
