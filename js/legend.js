@@ -40,6 +40,38 @@ function buildLegendPanel() {
       var row = document.createElement('div');
       row.className = 'legend-entry';
 
+        // Railroad: show track line instead of square marker
+      if (type === 'infrastructure' && subtype === 'railroad') {
+        var trackIcon = document.createElement('span');
+        trackIcon.style.cssText = 'position:relative;width:20px;height:6px;flex-shrink:0;display:inline-block;';
+
+        var trackBase = document.createElement('span');
+        trackBase.style.cssText = 'position:absolute;top:50%;left:0;width:20px;height:0;' +
+          'border-top:2px solid ' + geoStyles.railroad.base.color + ';transform:translateY(-50%);';
+
+        var trackTicks = document.createElement('span');
+        trackTicks.style.cssText = 'position:absolute;top:50%;left:0;width:20px;height:0;' +
+          'border-top:6px solid ' + geoStyles.railroad.ticks.color + ';' +
+          'border-image:repeating-linear-gradient(' +
+            '90deg,' +
+            geoStyles.railroad.ticks.color + ' 0px,' +
+            geoStyles.railroad.ticks.color + ' 1px,' +
+            'transparent 1px,' +
+            'transparent 4.5px' +
+          ') 1;' +
+          'opacity:' + geoStyles.railroad.ticks.opacity + ';transform:translateY(-50%);';
+
+        trackIcon.appendChild(trackBase);
+        trackIcon.appendChild(trackTicks);
+
+        var trackLabel = document.createElement('span');
+        trackLabel.textContent = ui[currentLang].subtypes['railroad'] || 'Railroad';
+        row.appendChild(trackIcon);
+        row.appendChild(trackLabel);
+        group.appendChild(row);
+        return;
+      }
+
       var iconRadius = style.shape === 'image' ? 10 : 6;
       var icon = document.createElement('span');
       icon.style.cssText = 'display:inline-flex;align-items:center;flex-shrink:0;';
@@ -98,9 +130,10 @@ function buildLegendPanel() {
       row.appendChild(label);
       group.appendChild(row);
     });
-
+    
     body.appendChild(group);
   });
+
 }
 
 // Wire up button and close

@@ -131,6 +131,7 @@ var ui = {
       //Acción
       "coercion": "Coerción",
       "violence": "Violencia",
+      "movement": "Movimiento",
       "legal": "Legal",
       //Información
       "correspondence": "Correspondencia",
